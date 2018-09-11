@@ -1,0 +1,26 @@
+.clock {
+    background: grey;
+    border-radius: 50%;
+    height: 40rem; 
+    width: 40rem;
+    margin: 0 auto; 
+    padding: 2rem; 
+
+    &__face {
+        background: center/90% no-repeat url('../img/clock.svg') #fff; 
+        border-radius: 50%;
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
+    &__center {
+        background: black;
+        border-radius: 50%; 
+        height: 2rem;
+        left: 17rem;
+        position: absolute; 
+        top: 17rem;
+        width: 2rem; 
+    }
+}

@@ -1,0 +1,29 @@
+.hand {
+    width: 28rem; 
+    height: .2rem; 
+    position: absolute;
+
+    &--hour {
+        background: black;
+        height: 1rem;
+        left: 4rem;
+        top: 17.5rem;
+        width: 14rem;
+    }
+
+    &--minute {
+        background: black;
+        height: .6rem;
+        left: 1.4rem;
+        top: 17.6rem;
+        width: 16.5rem; 
+    }
+
+    &--second {
+        background: red;
+        height: .2rem;
+        left: 1.4rem;
+        top: 17.8rem;
+        width: 16.5rem;
+    }
+}

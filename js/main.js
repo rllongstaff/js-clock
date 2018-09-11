@@ -1,1 +1,2 @@
-alert('hello');
+
+console.log('Can you see this');
