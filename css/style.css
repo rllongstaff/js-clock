@@ -12,7 +12,9 @@ body {
   box-sizing: border-box; }
 
 .header__heading {
-  font-size: 6rem; }
+  color: saddlebrown;
+  font-size: 6rem;
+  text-shadow: 1px 1px 2px black; }
 
 .footer__copy {
   color: white;
@@ -20,13 +22,16 @@ body {
 
 .clock {
   background: grey;
+  border: 5px solid #555;
   border-radius: 50%;
+  box-shadow: 5px 5px 30px black;
   height: 40rem;
   width: 40rem;
   margin: 0 auto;
   padding: 2rem; }
   .clock__face {
     background: center/90% no-repeat url("../img/clock.svg") #fff;
+    border: 1px solid #333;
     border-radius: 50%;
     height: 100%;
     position: relative;
@@ -43,7 +48,11 @@ body {
 .hand {
   width: 28rem;
   height: .2rem;
-  position: absolute; }
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.03, 1.09, 0.88, 1.46); }
   .hand--hour {
     background: black;
     height: 1rem;
@@ -74,4 +83,4 @@ body {
   text-align: center; }
 
 .section {
-  padding: 4rem 0; }
+  padding: 10rem 0; }
